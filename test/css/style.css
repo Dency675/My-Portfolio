@@ -1,0 +1,169 @@
+body{
+    width: 100%;
+}
+.navbar{
+    margin-left: 50%;
+    margin-top: 10px;
+}
+
+.section-container{
+    background-image: url("/test/img/pic2.jpg");
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-container-div{
+    margin-left: 1.5rem;
+    text-align: center;
+    font-family:  'Permanent Marker', cursive,'Work Sans', sans-serif;
+    color: #0f070a;
+}
+
+.section-container-div h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: .5rem;
+    letter-spacing: .41rem;
+    font-weight: 700;
+}
+
+.section-container-div p{
+    margin-left: 1px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+}
+
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    flex-direction: row;
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+}
+
+.aboutMe-img{
+    padding-left: 0;
+    padding-right: 0;
+    flex: 1;
+    margin-right: 30px;
+    
+    /* background-color: green; */
+}
+
+.aboutMe-img img{
+    border-radius: 50%;
+    /* border-radius: 9999px; */
+    max-width: 50%;
+    height: auto;
+    margin-left: 150px;
+    /* display: block; */
+}
+
+.navbar a.active{
+    color: red;
+}
+.aboutMe-h{
+    flex: 3;
+    /* background-color: red; */
+    margin-right: 100px;
+}
+
+.aboutMe-h h2{
+    text-transform: uppercase;
+    margin-left: -1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: rgb(254 217 111 );
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family:  'Permanent Marker', cursive,'Work Sans', sans-serif;
+
+
+}
+
+.aboutMe-h p{
+    line-height: 2;
+    font-size: 1.125rem;
+}
+
+
+
+/* / */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    display: none; /* Initially hide the menu icon on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
